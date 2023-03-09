@@ -1,11 +1,36 @@
 @use "components";
 
+html{
+    min-width: 100vw;
+}
+
 body{
     padding: 0;
     margin: 0;
     max-width: 100vw;
     max-height: 100vw;
     background-color: components.$bg-color;
+}
+
+.navbar-toggler{
+    color: components.$color-text;
+}
+.container-nav{
+    height: 200px;
+}
+
+.container-description{
+max-width: 100vw;
+max-height: 100vh;
+margin-top: 150px;
+.description-text{
+    max-width: 100%;
+}
+}
+
+.container-gral{
+    height: 100vh;
+    width: 100vw;
 }
 
 @media (max-width: 576px) {
