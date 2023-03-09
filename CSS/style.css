@@ -1,0 +1,80 @@
+.title {
+  color: #29335c;
+  font-size: 10rem;
+  text-align: center;
+}
+
+.icon {
+  font-size: 5rem;
+  color: #669BBC;
+  padding: 0.5rem 1.5rem;
+  border-radius: 100%;
+}
+.icon:hover {
+  transition: all 150ms;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.0588235294);
+  cursor: pointer;
+}
+
+.title-section {
+  font-size: 5rem;
+  color: #29335c;
+}
+
+.description-text {
+  font-size: 2rem;
+  color: #29335c;
+  text-align: justify;
+}
+
+.go-up {
+  display: block;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  font-size: 3rem;
+  color: #A8C686;
+  font-weight: 600;
+}
+
+.icon-superior .icon-c {
+  font-size: 10rem;
+  color: #e02d0d;
+  padding: 0.5rem 1.5rem;
+  border-radius: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
+  max-height: 100vw;
+  background-color: #F3A712;
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 2rem;
+  }
+  .icon-superior .icon-c {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .title {
+    font-size: 4rem;
+  }
+  .icon-superior .icon-c {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .title {
+    font-size: 6rem;
+  }
+  .icon-superior .icon-c {
+    font-size: 8rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

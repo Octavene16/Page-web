@@ -1,0 +1,56 @@
+$color-text: #29335c;
+$bg-color: #F3A712;
+
+
+//https://coolors.co/e4572e-29335c-f3a712-a8c686-669bbc
+
+
+.title{
+    color: $color-text;
+    font-size: 10rem;
+    text-align: center;
+}
+
+.icon{
+    font-size: 5rem;
+    color: #669BBC;
+    padding: 0.5rem 1.5rem;
+    border-radius: 100%;
+
+    &:hover{
+            transition: all 150ms;
+            box-shadow: 0 0 10px #0000000f;
+            cursor: pointer;
+    }
+
+}
+
+.title-section{
+    font-size: 5rem;
+    color: $color-text;
+}
+
+.description-text{
+    font-size: 2rem;
+    color: $color-text;
+    text-align: justify;
+}
+
+.go-up{
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    font-size: 3rem;
+    color: #A8C686;
+    font-weight: 600;
+}
+
+.icon-superior{
+    .icon-c{
+        font-size: 10rem;
+        color: #e02d0d;
+        padding: 0.5rem 1.5rem;
+        border-radius: 100%;
+    }
+}
