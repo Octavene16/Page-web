@@ -8,6 +8,7 @@ $color-lg: #546191;
 @mixin caract {
     color: $color-lg;
     font-size: 1.5rem;
+    text-align: justify;
 }
 
 .colorbg {
@@ -53,6 +54,12 @@ $color-lg: #546191;
     font-size: 2rem;
     color: $color-text;
     text-align: justify;
+}
+.description-text-edu{
+    padding: 10px 50px 10px 10px;
+    font-size: 2rem;
+    color: $color-text;
+    text-align: left;
 }
 
 .go-up {

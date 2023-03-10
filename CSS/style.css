@@ -42,6 +42,13 @@
   text-align: justify;
 }
 
+.description-text-edu {
+  padding: 10px 50px 10px 10px;
+  font-size: 2rem;
+  color: #29335c;
+  text-align: left;
+}
+
 .go-up {
   display: block;
   position: fixed;
@@ -121,10 +128,12 @@
 .list-group .list-group-item p {
   color: #546191;
   font-size: 1.5rem;
+  text-align: justify;
 }
 .list-group .list-group-item small {
   color: #546191;
   font-size: 1.5rem;
+  text-align: justify;
 }
 
 /* Genel stil */
