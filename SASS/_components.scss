@@ -1,7 +1,6 @@
 $color-text: #29335c;
 $bg-color: #F3A712;
 
-
 //https://coolors.co/e4572e-29335c-f3a712-a8c686-669bbc
 
 .colorbg {
@@ -60,8 +59,18 @@ $bg-color: #F3A712;
 
 .nav-link{
     color: $color-text;
+    font-size: 2rem;
     &:hover{
         color:white;
+    }
+}
+
+.ul-footer{
+    text-align: center;
+    .li-footer{
+        margin: 2rem;
+        display: inline-block;
+
     }
 }
 
