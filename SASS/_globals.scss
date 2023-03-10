@@ -2,13 +2,13 @@
 
 
 
-html{
+html {
     min-width: 100vw;
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     padding: 0;
     margin: 0;
     max-width: 100vw;
@@ -17,67 +17,263 @@ body{
 }
 
 
-.footer{
-    background-color: #000000;
+.footer {
+    height: 400px;
+    background-color: components.$color-text;
     color: white;
     min-width: 100%;
-    padding: 0;
     margin: 0;
-    border-radius: 10px;
+    padding: 20px 50px 0px 30px;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     color: components.$color-text;
 }
-.container-nav{
-    height: 200px;
+
+.container-description {
+    max-width: 100vw;
+    padding-top: 100px;
+
+    .description-text {
+        max-width: 100%;
+    }
+
+    .img-about {
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        box-shadow: 0 0 0 5px components.$color-text;
+    }
 }
 
-
-.container-description{
-max-width: 100vw;
-max-height: 100vh;
-margin-top: 150px;
-.description-text{
-    max-width: 100%;
-}
+.container-description-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
 }
 
-.container-gral{
+.container-gral {
     min-height: 100vh;
     min-width: 100vw;
+    padding: 0;
 }
+
+
+
+
+
+
 
 @media (max-width: 576px) {
-    .title{
+    .title {
         font-size: 2rem;
     }
-    .icon-superior{
-        .icon-c{
-            font-size: 4rem;
+
+    .title-section {
+        font-size: 2rem;
+    }
+
+    .description-text {
+        font-size: 1rem;
+    }
+
+    .ul-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0;
+
+        a {
+            font-size: 1rem;
+
+            &:hover {
+                color: white;
+            }
         }
     }
+
+    .container-eduskill {
+        display: block;
+
+    }
+
+    .list-group {
+        .list-group-item {
+            padding-left: 10px;
+
+            p {
+                font-size: 1rem;
+            }
+
+            small {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .carousel {
+        min-width: 100vw;
+        .carousel-item {
+            padding: 4rem;
+        }
+
+        .carousel-item {
+            img {
+                width: 100px;
+                height: 150px;
+                border-radius: 100%;
+                align-items: center;
+                padding: 0;
+            }
+        }
+    }
+
 }
 
+
 @media (min-width: 577px) and (max-width: 768px) {
-    .title{
-        font-size: 4rem;
+    .title {
+        font-size: 2.5rem;
     }
-    .icon-superior{
-        .icon-c{
-            font-size: 6rem;
+
+
+    .title-section {
+        font-size: 2.5rem;
+    }
+
+    .description-text {
+        font-size: 1.5rem;
+    }
+
+    .ul-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0;
+
+        a {
+            font-size: 1.5rem;
+
+            &:hover {
+                color: white;
+            }
         }
     }
+
+    .container-eduskill {
+        display: block;
+
+    }
+
+    .list-group {
+        .list-group-item {
+            padding-left: 10px;
+
+            p {
+                font-size: 1.5rem;
+            }
+
+            small {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .carousel {
+        min-width: 100vw;
+
+        .carousel-item {
+            padding: 13rem;
+        }
+
+        .carousel-item {
+            img {
+                width: 100px;
+                height: 150px;
+                border-radius: 100%;
+                align-items: center;
+                padding: 0;
+            }
+        }
+    }
+
+
+
 }
 
 @media (min-width: 769px) and (max-width: 1077px) {
-    .title{
-        font-size: 6rem;
+    .title {
+        font-size: 3rem;
     }
-    .icon-superior{
-        .icon-c{
-            font-size: 8rem;
+   
+    .title-section {
+        font-size: 2.5rem;
+    }
+
+    .description-text {
+        font-size: 1.5rem;
+    }
+
+    .ul-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0;
+
+        a {
+            font-size: 1.5rem;
+
+            &:hover {
+                color: white;
+            }
         }
     }
+
+    .container-eduskill {
+        display: block;
+
+    }
+
+    .list-group {
+        .list-group-item {
+            padding-left: 10px;
+
+            p {
+                font-size: 1.5rem;
+            }
+
+            small {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .carousel {
+        min-width: 100vw;
+
+        .carousel-item {
+            padding: 13rem;
+        }
+
+        .carousel-item {
+            img {
+                width: 100px;
+                height: 150px;
+                border-radius: 100%;
+                align-items: center;
+                padding: 0;
+            }
+        }
+    }
+
+
 }

@@ -1,7 +1,14 @@
 $color-text: #29335c;
 $bg-color: #F3A712;
+$color-footer: #6B0F1A;
+$color-lg: #546191;
 
 //https://coolors.co/e4572e-29335c-f3a712-a8c686-669bbc
+
+@mixin caract {
+    color: $color-lg;
+    font-size: 1.5rem;
+}
 
 .colorbg {
     background-color: $bg-color;
@@ -9,7 +16,7 @@ $bg-color: #F3A712;
 
 .title {
     color: $color-text;
-    font-size: 10rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -27,12 +34,22 @@ $bg-color: #F3A712;
 
 }
 
+.container-img-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
 .title-section {
     font-size: 5rem;
     color: $color-text;
 }
 
 .description-text {
+    padding: 10px 50px 10px 10px;
     font-size: 2rem;
     color: $color-text;
     text-align: justify;
@@ -48,29 +65,170 @@ $bg-color: #F3A712;
     font-weight: 600;
 }
 
-.icon-superior {
-    .icon-c {
-        font-size: 10rem;
-        color: #e02d0d;
-        padding: 0.5rem 1.5rem;
-        border-radius: 100%;
-    }
-}
 
-.nav-link{
+.nav-link {
     color: $color-text;
     font-size: 2rem;
-    &:hover{
-        color:white;
+
+    &:hover {
+        color: white;
     }
 }
 
-.ul-footer{
-    text-align: center;
-    .li-footer{
-        margin: 2rem;
-        display: inline-block;
+.ul-footer {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+    gap: 10rem;
 
+    .li-footer {
+        display: inline-block;
+        font-size: 1rem;
+        color: $bg-color;
     }
+
+    a {
+        color: $bg-color;
+        font-size: 1rem;
+        text-decoration: none;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+.container-eduskill{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+
+    #education {
+        max-width: 80%;
+    }
+    
+    #skills {
+        max-width: 20%;
+    }
+}
+
+
+.carousel {
+
+    width: 100%;
+
+    .carousel-inner {
+        padding: 0;
+    }
+
+    .carousel-item {
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            align-items: center;
+            padding: auto;
+        }
+    }
+}
+
+.list-group {
+    .list-group-item {
+        background-color: $bg-color;
+        border: none;
+        padding-left: 50px;
+
+        p {
+            @include caract();
+        }
+
+        small {
+            @include caract();
+        }
+    }
+}
+
+
+
+/* Genel stil */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    margin: 10px;
+}
+
+/* Giriş stil */
+.toggle-switch .toggle-input {
+    display: none;
+}
+
+/* Anahtarın stilinin etrafındaki etiketin stil */
+.toggle-switch .toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 24px;
+    background-color: #2196F3;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Anahtarın yuvarlak kısmının stil */
+.toggle-switch .toggle-label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+/* Anahtarın etkin hale gelmesindeki stil değişiklikleri */
+.toggle-switch .toggle-input:checked+.toggle-label {
+    background-color: #4CAF50;
+}
+
+.toggle-switch .toggle-input:checked+.toggle-label::before {
+    transform: translateX(16px);
+}
+
+/* Light tema */
+.toggle-switch.light .toggle-label {
+    background-color: #BEBEBE;
+}
+
+.toggle-switch.light .toggle-input:checked+.toggle-label {
+    background-color: #9B9B9B;
+}
+
+.toggle-switch.light .toggle-input:checked+.toggle-label::before {
+    transform: translateX(6px);
+}
+
+/* Dark tema */
+.toggle-switch.dark .toggle-label {
+    background-color: #4B4B4B;
+}
+
+.toggle-switch.dark .toggle-input:checked+.toggle-label {
+    background-color: #717171;
+}
+
+.toggle-switch.dark .toggle-input:checked+.toggle-label::before {
+    transform: translateX(16px);
 }
 
